@@ -4,86 +4,90 @@ struct Antimicrobial: Identifiable, Hashable, Codable {
     var id: Int
     var drug: String
     var escherichiaColi: Double
-    var escherichiaColiESBL: Double
-    var escherichiaColiOXA: Double
-    var escherichiaColiMBL: Double
-    var escherichiaColiKPC: Double
+    var escherichiaColiEsbl: Double
+    var escherichiaColiOxa: Double
+    var escherichiaColiMbl: Double
+    var escherichiaColiKpc: Double
     var klebsiellaSp: Double
-    var klebsiellaSpESBL: Double
-    var klebsiellaSpOXA: Double
-    var klebsiellaSpMBL: Double
-    var klebsiellaSpKPC: Double
-    var klebsiellaOxytoca: Double
-    var klebsiellaOxytocaESBL: Double
-    var klebsiellaPneumoniae: Double
-    var raoultellaSp: Double
+    var klebsiellaSpEsbl: Double
+    var klebsiellaSpOxa: Double
+    var klebsiellaSpMbl: Double
+    var klebsiellaSpKpc: Double
     var serratiaMarcescens: Double
     var yersiniaPseudotuberculosis: Double
     var yersiniaEnterocolitica: Double
     var salmonellaSp: Double
     var escherichiaHermanii: Double
-    var hafniaAlvei: Double
+    var hafniaSp: Double
     var shigellaSp: Double
     var citrobacterSp: Double
+    var citrobacterSpEsbl: Double
+    var citrobacterSpOxa: Double
+    var citrobacterSpMbl: Double
+    var citrobacterSpKpc: Double
     var citrobacterFreundii: Double
     var citrobacterBraakii: Double
     var enterobacterSp: Double
-    var enterobacterSpOXA: Double
-    var enterobacterSpMBL: Double
-    var enterobacterSpKPC: Double
+    var enterobacterSpOxa: Double
+    var enterobacterSpMbl: Double
+    var enterobacterSpKpc: Double
     var klebsiellaAerogenes: Double
     var providenciaSp: Double
     var morganellaSp: Double
     var proteusMirabilis: Double
-    var proteusMirabilisESBL: Double
+    var proteusMirabilisEsbl: Double
     var proteusPenneri: Double
     var proteusVulgaris: Double
     var pseudomonasAeruginosa: Double
     var stenotrophomonasMaltophilia: Double
     var acinetobacterSp: Double
-    var msConStaphylococci: Double
-    var mrConStaphylococci: Double
-    var staphylococcusLugdunensis: Double
+    var msCons: Double
+    var staphylococcusCapitis: Double
     var staphylococcusSaprophyticus: Double
-    var mssa: Double
-    var mrsa: Double
+    var mrCons: Double
+    var mrStaphylococcusCapitis: Double
+    var mrStaphylococcusSaprophyticus: Double
+    var msSa: Double
+    var mrSa: Double
     var enterococcusSp: Double
+    var enterococcusSpVRE: Double
     var enterococcusFaecalis: Double
     var enterococcusFaecium: Double
     var enterococcusGallinarum: Double
     var enterococcusCasseliflavus: Double
-    var streptococciABCG: Double
+    var streptococcusGroupabcg: Double
     var streptococcusPneumoniae: Double
-    var streptococcusViridans: Double
-    var streptococcusAnginosus: Double
+    var viridansStreptococci: Double
+    var streptococcusAnginosusgroup: Double
     var haemophilusInfluenzae: Double
     var moraxellaCatarrhalis: Double
     var neisseriaGonorrhoeae: Double
     var neisseriaMeningitidis: Double
     var helicobacterPylori: Double
-    var listeriaMonocytogenes: Double
-    var pasteurellaMultocida: Double
-    var campylobacterJejuni: Double
-    var campylobacterColi: Double
-    var corynebacteriumSp: Double
-    var aerococcusUrinae: Double
-    var aerococcusSanguinicola: Double
-    var kingellaKingae: Double
-    var aeromonasSp: Double
-    var aeromonasVeronii: Double
-    var aeromonasJandaei: Double
-    var aeromonasDhakensis: Double
-    var achromobacterXylosoxidans: Double
-    var vibrioSp: Double
-    var bacillusSp: Double
-    var burkholderiaPseudomallei: Double
-    var burkholderiaCepacia: Double
     var bacteroidesSp: Double
     var prevotellaSp: Double
     var fusobacteriumNecrophorum: Double
     var clostridiumPerfringens: Double
     var cutibacteriumAcnes: Double
     var clostridioidesDifficile: Double
+    var listeriaMonocytogenes: Double
+    var pasteurellaSp: Double
+    var campylobacterSp: Double
+    var corynebacteriumSp: Double
+    var corynebacteriumDiphtheriae: Double
+    var corynebacteriumUlcerans: Double
+    var aerococcusSp: Double
+    var kingellaKingae: Double
+    var aeromonasSp: Double
+    var aeromonasDhakensis: Double
+    var achromobacterXylosoxidans: Double
+    var vibrioSp: Double
+    var bacillusSp: Double
+    var bacillusAnthracis: Double
+    var brucellaMelitensis: Double
+    var burkholderiaPseudomallei: Double
+    var burkholderiacepaciaComplex: Double
+    var legionellaPneumophila: Double
     var treponemaPallidum: Double
     var borreliaBurgorferi: Double
     var leptospiraInterrogans: Double
@@ -92,27 +96,19 @@ struct Antimicrobial: Identifiable, Hashable, Codable {
     var ureaplasmaUrealyticum: Double
     var ureaplasmaParvum: Double
     var mycoplasmaPneumoniae: Double
-    var legionellaPneumophila: Double
     var francisellaTularensis: Double
-    var brucellaSp: Double
     var nocardiaAbscessus: Double
     var nocardiaAsteroides: Double
-    var nocardiaBrevicatena: Double
-    var nocardiaPaucivorans: Double
     var nocardiaCyriacigeorgica: Double
     var nocardiaFarcinica: Double
     var nocardiaNova: Double
     var nocardiaTransvalensis: Double
-    var nocardiaBrasiliensis: Double
-    var nocardiaOtitidiscaviarum: Double
-    var nocardiaPseudobrasiliensis: Double
     var chlamydiaPsittaci: Double
     var chlamydiaPneumoniae: Double
     var chlamydiaTrachomatis: Double
-    var bartonellaSp: Double
+    var bartonellaHenselae: Double
     var bordetellaPertussis: Double
     var coxiellaBurnetii: Double
-    var capnocytophagaSp: Double
     var eikenellaSp: Double
     var haemophilusDucreyi: Double
     var ehrlichiaChaffeensis: Double

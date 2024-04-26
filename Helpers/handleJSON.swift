@@ -2,7 +2,7 @@ import Foundation
 import Combine
 
 final class ModelData: ObservableObject {
-    @Published var antimicrobials: [Antimicrobial] = load("scores.json")
+    @Published var antimicrobials: [Antimicrobial] = load("eucast14.json")
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
