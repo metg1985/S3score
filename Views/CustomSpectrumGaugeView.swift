@@ -19,6 +19,8 @@ struct CustomSpectrumGaugeView: View {
     private let minValue = 0.0
     private let maxValue = 1.0
     
+    var calc: () -> Void
+    
     let gradient = Gradient(colors: [.red, .orange, .yellow, .green, .blue, .purple])
     
     var body: some View {
@@ -53,6 +55,7 @@ struct CustomSpectrumGaugeView: View {
                 }
                 .gaugeStyle(.accessoryCircular)
                 .tint(gradient)
+                .onAppear(perform: self.calc)
             }
         }
         .padding()
@@ -86,6 +89,7 @@ struct CustomSpectrumGaugeView: View {
             }
             .gaugeStyle(.accessoryCircular)
             .tint(gradient)
+            .onAppear(perform: self.calc)
         }
         .padding()
     }
@@ -95,7 +99,7 @@ struct CustomSpectrumGaugeView: View {
 
 struct CustomSpectrumGaugeView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomSpectrumGaugeView(selection1: .constant(1), selection2: .constant(2), selection3: .constant(3), selection4: .constant(4), selection5: .constant(5), selection6: .constant(6), selection7: .constant(7), selection8: .constant(8),initialSpectrumScore: .constant(0.15), finalSpectrumScore: .constant(0.85))
+        AntimicrobialList()
     }
 }
 

@@ -26,8 +26,8 @@ struct AboutView: View {
                     .font(.title)
                     .fontWeight(Font.Weight.bold)
                 VStack {
-                    Text("- EUCAST breakpoints table v13.0")
-                    Text("- EUCAST: Expected Resistant Phenotypes Version 1.1 March 2022")
+                    Text("- EUCAST breakpoints table v14.0 (1/1/24)")
+                    Text("- EUCAST: Expected Resistant Phenotypes Version 1.2 (1/13/23)")
                 }
                 .font(.subheadline)
                 .multilineTextAlignment(.center)
